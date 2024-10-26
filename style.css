@@ -1,0 +1,46 @@
+/* Estilos adicionales */
+.ticket-info {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.btn-confirm {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-confirm:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el navbar */
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand img {
+    margin-right: 8px;
+}
+
+.form-inline .form-control {
+    width: 200px;
+}
+
+/* Estilos para el navbar y el carrusel */
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand img {
+    margin-right: 8px;
+}
+
+.form-inline .form-control {
+    width: 200px;
+}
+
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
+}

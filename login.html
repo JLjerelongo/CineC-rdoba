@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro o Inicio de Sesión - Cine Córdoba</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botón Volver -->
+    <div class="container mt-3">
+        <a href="index.html" class="btn btn-outline-secondary">Volver al Inicio</a>
+    </div>
+
+    <!-- Contenedor principal -->
+    <div class="container mt-5">
+        <h2 class="text-center">Bienvenido a Cine Córdoba</h2>
+        <p class="text-center">Crea tu cuenta o inicia sesión para disfrutar de nuestra cartelera y promociones.</p>
+
+        <div class="row">
+            <!-- Formulario de Registro -->
+            <div class="col-md-6">
+                <h3>Crear Cuenta</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="nombreRegistro">Nombre:</label>
+                        <input type="text" class="form-control" id="nombreRegistro" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="emailRegistro">Email:</label>
+                        <input type="email" class="form-control" id="emailRegistro" placeholder="Ingresa tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordRegistro">Contraseña:</label>
+                        <input type="password" class="form-control" id="passwordRegistro" placeholder="Crea una contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Registrarse</button>
+                </form>
+            </div>
+
+            <!-- Formulario de Inicio de Sesión -->
+            <div class="col-md-6">
+                <h3>Iniciar Sesión</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="emailLogin">Email:</label>
+                        <input type="email" class="form-control" id="emailLogin" placeholder="Ingresa tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordLogin">Contraseña:</label>
+                        <input type="password" class="form-control" id="passwordLogin" placeholder="Ingresa tu contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Iniciar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
