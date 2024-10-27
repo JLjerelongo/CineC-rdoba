@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - Cine Córdoba</title>
+    <title>Crear Cuenta - Cine Córdoba</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -33,27 +33,33 @@
             </ul>
         </div>
     </nav>
-
     <div class="container mt-5">
         <div class="row">
-            <!-- Columna de Login -->
+            <!-- Columna de Registro -->
             <div class="col-md-6 p-5">
-                <h2 class="mb-4">Iniciá Sesión</h2>
+                <h2 class="mb-4">Crear Usuario</h2>
                 <form>
                     <div class="form-group">
-                        <label for="emailLogin">Usuario</label>
-                        <input type="email" class="form-control" id="emailLogin" placeholder="Ingresa tu email" required>
+                        <label for="nombreRegistro">Nombre</label>
+                        <input type="text" class="form-control" id="nombreRegistro" placeholder="Ingresa tu nombre" required>
                     </div>
                     <div class="form-group">
-                        <label for="passwordLogin">Contraseña</label>
-                        <input type="password" class="form-control" id="passwordLogin" placeholder="Ingresa tu contraseña" required>
+                        <label for="apellidoRegistro">Apellido</label>
+                        <input type="text" class="form-control" id="apellidoRegistro" placeholder="Ingresa tu apellido" required>
                     </div>
-                    <button type="submit" class="btn btn-dark btn-block">LOGIN</button>
-                    <a href="#" class="d-block mt-2 text-center">¿Olvidé mi contraseña?</a>
+                    <div class="form-group">
+                        <label for="emailRegistro">Email</label>
+                        <input type="email" class="form-control" id="emailRegistro" placeholder="Ingresa tu email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="passwordRegistro">Contraseña</label>
+                        <input type="password" class="form-control" id="passwordRegistro" placeholder="Crea una contraseña" required>
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-block">Registrarse</button>
                 </form>
                 <hr>
-                <p class="text-center">¿No tenés cuenta?</p>
-                <a href="registro.html" class="btn btn-secondary btn-block">Crear Cuenta</a>
+                <p class="text-center">¿Ya tenés cuenta?</p>
+                <a href="login.html" class="btn btn-secondary btn-block">Iniciar Sesión</a>
             </div>
             <!-- Columna de Promoción -->
             <div class="col-md-6 d-flex align-items-center justify-content-center bg-light">

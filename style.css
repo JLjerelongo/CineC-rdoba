@@ -1,46 +1,142 @@
-/* Estilos adicionales */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Cambia la fuente si es necesario */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
+}
+
+/* Estilos para el navbar */
+.navbar {
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+.navbar-brand img {
+    margin-right: 8px;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Estilo para el botón de crear cuenta en el navbar */
+.navbar .btn-outline-light {
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    margin-left: auto;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* Estilos para el formulario de login y registro */
+.form-control {
+    border-radius: 5px;
+}
+
+/* Estilos para botones */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Estilos para el carrusel */
+.container-custom {
+    width: 100%; /* Asegura que el contenedor del carrusel ocupe todo el ancho disponible */
+    max-width: 1400px;
+    margin: 0 auto; /* Centra el contenido en la página */
+}
+
+/* Ajuste de ancho y estilo del carrusel */
+#carteleraCarousel {
+    border-radius: 10px; /* Bordes redondeados para el carrusel */
+    overflow: hidden; /* Evita que los elementos internos sobresalgan */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Sombra alrededor */
+}
+
+/* Ajuste de las imágenes internas para que se ajusten al tamaño del carrusel */
+.carousel-inner img {
+    width: 100%; /* Asegura que las imágenes ocupen el 100% del ancho */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    max-height: 400px; /* Limita la altura máxima para el carrusel */
+    object-fit: cover; /* Asegura que la imagen cubra toda el área sin deformarse */
+}
+
+.carousel-indicators li {
+    background-color: #333;
+}
+
+.carousel-indicators .active {
+    background-color: #ffcc00;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+
+
+/* Estilos adicionales para la información del ticket */
 .ticket-info {
     background-color: #f8f9fa;
     padding: 10px;
     border-radius: 8px;
 }
 
-.btn-confirm {
-    background-color: #007bff;
+/* Estilos del footer */
+footer {
+    background-color: #333;
     color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: auto; /* Asegura que el footer se empuje hacia abajo */
 }
 
-.btn-confirm:hover {
-    background-color: #0056b3;
+footer .container {
+    max-width: 1200px;
+    margin: auto;
 }
 
-/* Estilos para el navbar */
-.navbar {
-    padding: 1rem;
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-.navbar-brand img {
-    margin-right: 8px;
-}
-
-.form-inline .form-control {
-    width: 200px;
-}
-
-/* Estilos para el navbar y el carrusel */
-.navbar {
-    padding: 1rem;
-}
-
-.navbar-brand img {
-    margin-right: 8px;
-}
-
-.form-inline .form-control {
-    width: 200px;
-}
-
-.carousel-inner img {
-    height: 500px;
-    object-fit: cover;
+footer a:hover {
+    color: #ffc107;
+    text-decoration: underline;
 }
